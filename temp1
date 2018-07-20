@@ -1,0 +1,3 @@
+#!/bin/bash
+str1=`vcgencmd measure_temp`
+echo "pi.cpu.temp" ${str1:5:4} "source=pi1"

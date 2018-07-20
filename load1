@@ -1,0 +1,7 @@
+#!/bin/bash
+str1=`cat /proc/loadavg | awk '{print $1}'`
+str2=`cat /proc/loadavg | awk '{print $2}'`
+str3=`cat /proc/loadavg | awk '{print $3}'`
+echo "system.load1" $str1 "source=pi1 dc=willow-glen"
+echo "system.load5" $str2 "source=pi1 dc=willow-glen"
+echo "system.load15" $str3 "source=pi1 dc=willow-glen"
