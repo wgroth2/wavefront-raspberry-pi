@@ -1,0 +1,5 @@
+#!/bin/bash
+gpio mode 29 out
+gpio write 29 1
+sleep 2
+gpio write 29 0
