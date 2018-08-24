@@ -1,4 +1,4 @@
 # wavefront-raspberry-pi
 
-See the Wavefront blog X for more details. (coming soon) See http://wavefront.com/blog/
+The blog for this code is at: https://communities.vmware.com/blogs/billroth/2018/08/24/sending-metrics-data-from-raspberry-pi-to-wavefront
 
