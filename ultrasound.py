@@ -1,3 +1,7 @@
+#
+# Code to pull data off HC-SR04 ultrasonic distance detector
+# most ideas from here: https://tutorials-raspberrypi.com/raspberry-pi-ultrasonic-sensor-hc-sr04/
+#
 #Libraries
 import RPi.GPIO as GPIO
 import time
@@ -47,6 +51,7 @@ if __name__ == '__main__':
     time.sleep(2)
     try:
         while True:
+            # outputting in wavefront format for streaming there. see docs.wavefront.com for more details.
             dist = distance()
             print "sensor.hcsr.distance %.1f %d source=python" % (dist,time.time())
             sys.stdout.flush()
